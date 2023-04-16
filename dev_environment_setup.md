@@ -24,7 +24,7 @@ NOTE: My preferred terminal profile can be found [here](https://drive.google.com
 Install VSCode (Assuming settings sync is ON, all VSCode settings sync once signed in), Slack, Zoom and iTerm (command line):
 ```
 brew install --cask visual-studio-code
-rew install --cask slack
+brew install --cask slack
 brew install --cask zoom
 brew install --cask iterm2
 ```
@@ -32,13 +32,19 @@ Install Oh My ZSH (command line) - currently:
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+Install RVM (Ruby version manager) - see my notes [here](https://docs.google.com/document/d/16G3-ixyX0yHJAy9MevqVIQ8Km5e01OAUD8epqg4h7v0/edit#heading=h.yo6xrg8msfu7) rather than the Makers’ guide.
 
-Install RVM (Ruby version manager) - see my notes here rather than the Makers’ guide.
 Assuming that homebrew and xcode command line tools are already installed.
-Then, from here, brew install gnupg   .
-Then gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB   .
-Then to install rvm itself: \curl -sSL https://get.rvm.io | bash -s stable   .
-Then, from here, source ~/.rvm/scripts/rvm   .
+Then, from here, 
+```
+brew install gnupg
+gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+```
+Then to install rvm itself: 
+```
+\curl -sSL https://get.rvm.io | bash -s stable 
+source ~/.rvm/scripts/rvm 
+```
 To install the latest stable version of Ruby:
 rvm get master to update the known list of Ruby versions which always seems to be way behind.
 rvm list known to show new list of available stable versions
