@@ -19,6 +19,11 @@ Suggested order from this point…
 
 Setup keyboard maestro - all details [here](https://docs.google.com/document/d/10Tu7gZg3YSOjEJppylCtM4W_PvpOlSa6TabENkKWP18/edit?usp=sharing).
 
+Install Dropbox for Keyboard Maestro macros:
+```
+brew install --cask  dropbox
+```
+
 NOTE: My preferred terminal profile can be found [here](https://drive.google.com/drive/folders/1PqfaIsI-swLBF5ibFG5yhHAJUCXU6crN?usp=sharing). Terminal > Preferences… > Profiles > … > import
 
 Install VSCode (Assuming settings sync is ON, all VSCode settings sync once signed in), Slack, Zoom and iTerm (command line):
@@ -78,24 +83,21 @@ Install TablePlus (GUI for databases):
 ```
 brew install --cask tableplus
 ```
-See below for configuring TablePlus and Makers info.
+See [here](https://github.com/pablisch/dev-environment-setup/blob/main/configuring_tableplus.md) for [configuring TablePlus](https://github.com/pablisch/dev-environment-setup/blob/main/configuring_tableplus.md) and [Makers info](https://github.com/makersacademy/databases/blob/main/sql_bites/06_using_table_plus.md).
 
-Install Postman (HTTP client GUI) - brew install --cask postman    .
-
-BELOW are other useful apps but not directly needed for the coding environment
-
-Install Google Drive (optional) - brew install --cask google-drive   .
-
-Install gimp (graphics editor) (optional) - brew install --cask gimp   .
-
-Install vlc (media player) (optional) - brew install --cask vlc   .
-
-Install firefox (internet browser) (optional) - brew install --cask firefox   .
-
-Install whatsapp (optional) - brew install --cask  whatsapp   .
-
-Install etcher (optional) - brew install --cask  balenaetcher   .
-
+Install Postman (HTTP client GUI):
+```
+brew install --cask postman
+```
+BELOW are other useful apps but not directly needed for the coding environment:
+```
+brew install --cask google-drive 
+brew install --cask gimp 
+brew install --cask vlc 
+brew install --cask firefox 
+brew install --cask  whatsapp 
+brew install --cask  balenaetcher 
+```
 
 
 
