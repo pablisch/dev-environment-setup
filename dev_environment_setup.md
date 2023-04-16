@@ -46,13 +46,14 @@ Then to install rvm itself:
 source ~/.rvm/scripts/rvm 
 ```
 To install the latest stable version of Ruby:
-rvm get master to update the known list of Ruby versions which always seems to be way behind.
-rvm list known to show new list of available stable versions
-rvm install 3.2.2  <= example code to install version 3.2.2
-To install Ruby version 3.0.2, rvm install 3.0.2   .
-For documentation, run, rvm docs generate-ri   .
-To install Ruby version 2.7.3, rvm install 2.7.3   .
-If more than one version was installed you may choose to rvm –default use 3.2.2 to nominate a default version.
+```
+rvm get master # to update the known list of Ruby versions
+rvm list known # to show new list of available stable versions
+rvm install 3.2.2 # <= example code to install version 3.2.2
+rvm install 3.0.2 # <= example code to install version 3.0.2
+rvm docs generate-ri # to install documentation
+rvm –default use 3.0.2 # to nominate 3.0.2 as the default version
+```
 
 Install GitHub CLI - brew install gh
 Then gh auth login and follow the prompts.
