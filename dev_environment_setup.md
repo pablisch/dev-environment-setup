@@ -55,18 +55,29 @@ rvm docs generate-ri # to install documentation
 rvm –default use 3.0.2 # to nominate 3.0.2 as the default version
 ```
 
-Install GitHub CLI - brew install gh
-Then gh auth login and follow the prompts.
-Configure git, e.g. git config –-global user.name “your name” to configure your name. This is the basis for making other configuration changes, see here.   .
-See my gitconfig configurations here.
-NOTE: in the terminal, cat .gitconfig will show the .gitconfig file.
+Install GitHub CLI:
+```
+brew install gh
+gh auth login # and follow the prompts
+```
+Configure git, e.g. `git config –-global user.name “your name”` to configure your name. This is the basis for making other configuration changes, see [here](https://makersacademy.teachable.com/courses/makers-academy-mastery-precourse/lectures/3989157).
 
-Set up alias’ for command line. My aliases here.
+See my gitconfig configurations [here](https://docs.google.com/document/d/13pMs0KbL6SVWEqR7BREaDErzdEvKye507XLXTd21dW8/edit?usp=sharing).
+NOTE: in the terminal, `cat .gitconfig` will show the .gitconfig file.
 
-Install PostgreSQL - brew install postgresql@15 followed by brew services start postgresql@15 and open a new terminal to open the connection.
-Additional information from Makers here.
+Set up alias’ for command line. My aliases [here](https://docs.google.com/document/d/13pMs0KbL6SVWEqR7BREaDErzdEvKye507XLXTd21dW8/edit?usp=sharing).
 
-Install TablePlus (GUI for databases) - brew install --cask tableplus    .
+Install PostgreSQL:
+```
+brew install postgresql@15
+brew services start postgresql@15 # and open a new terminal to open the connection
+```
+Additional information from Makers [here](https://github.com/makersacademy/databases/blob/main/sql_bites/01_setting_up_database.md).
+
+Install TablePlus (GUI for databases): 
+```
+brew install --cask tableplus
+```
 See below for configuring TablePlus and Makers info.
 
 Install Postman (HTTP client GUI) - brew install --cask postman    .
@@ -86,16 +97,6 @@ Install whatsapp (optional) - brew install --cask  whatsapp   .
 Install etcher (optional) - brew install --cask  balenaetcher   .
 
 
-Setting up TablePlus
-Open TablePlus and right-click to start a  new connection:
-
-Choose PostgreSQL (for PostgreSQL obviously):
-
-The default values should work fine:
-
-Every time I have done this, I have got an error that the database <username>, e.g. pablojoyce, does not exist. 
-
-To fix this, in terminal, enter createdb <username>, e.g. createdb pablojoyce. Then try again to open the new connection.
 
 
 
