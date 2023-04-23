@@ -43,12 +43,14 @@ nvm is distributed using GitHub. Find the latest version [here](https://github.c
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash # to install nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+command -v nvm # to verify installation
 ```
 Then install and run node:
 ```
 nvm install node # here, node is an alias for the latest stable version of node
 nvm use node
 ```
+To verify install of node, run it by entering `node`.
 ## Ruby
 Install RVM (Ruby version manager) - see my notes [here](https://docs.google.com/document/d/16G3-ixyX0yHJAy9MevqVIQ8Km5e01OAUD8epqg4h7v0/edit#heading=h.yo6xrg8msfu7) rather than the Makers’ guide.
 
