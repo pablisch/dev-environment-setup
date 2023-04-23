@@ -37,6 +37,19 @@ Install Oh My ZSH (command line) - currently:
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+## JavaScript
+nvm is distributed using GitHub. Find the latest version [here](https://github.com/nvm-sh/nvm#installing-and-updating).
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash # to install nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+Then install and run node:
+```
+nvm install node # here, node is an alias for the latest stable version of node
+nvm use node
+```
+## Ruby
 Install RVM (Ruby version manager) - see my notes [here](https://docs.google.com/document/d/16G3-ixyX0yHJAy9MevqVIQ8Km5e01OAUD8epqg4h7v0/edit#heading=h.yo6xrg8msfu7) rather than the Makers’ guide.
 
 Assuming that homebrew and xcode command line tools are already installed.
@@ -59,7 +72,7 @@ rvm install 3.0.2 # <= example code to install version 3.0.2
 rvm docs generate-ri # to install documentation
 rvm –default use 3.0.2 # to nominate 3.0.2 as the default version
 ```
-
+## GitHub CLI
 Install GitHub CLI:
 ```
 brew install gh
@@ -71,14 +84,14 @@ See my gitconfig configurations [here](https://docs.google.com/document/d/13pMs0
 NOTE: in the terminal, `cat .gitconfig` will show the .gitconfig file.
 
 Set up alias’ for command line. My aliases [here](https://docs.google.com/document/d/13pMs0KbL6SVWEqR7BREaDErzdEvKye507XLXTd21dW8/edit?usp=sharing).
-
+## Postgres
 Install PostgreSQL:
 ```
 brew install postgresql@15
 brew services start postgresql@15 # and open a new terminal to open the connection
 ```
 Additional information from Makers [here](https://github.com/makersacademy/databases/blob/main/sql_bites/01_setting_up_database.md).
-
+## More
 Install TablePlus (GUI for databases): 
 ```
 brew install --cask tableplus
