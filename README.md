@@ -1,5 +1,7 @@
 # Setting dev environment from scratch OS
 
+This file is personal notes on setting up the dev environment as a personal tool.
+
 It is likely to get to this point, you will already have installed Homebrew and Chrome, if not…
 
 Install homebrew: 
