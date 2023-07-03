@@ -57,14 +57,55 @@ To verify install of node, run it by entering `node`.
 npm install -g esbuild # js build tool install globally
 ```
 
-## MERN (MongoDB & Express)
-
+## MERN (Nodemon, MongoDB, Mongoose and Express)
+To install all of the below and start the MongoDB server:
+```
+brew tap mongodb/brew
+brew update
+brew install mongodb-community@6.0
+brew services start mongodb-community
+npm install -g nodemon mongoose express
+brew install --cask mongodb-compass
+```
+To install Nodemon:
+```
+npm install -g nodemon
+```
 Install MongoDB:
 ```
 brew tap mongodb/brew
 brew update
 brew install mongodb-community@6.0
 ```
+To start the MongoDB server:
+```
+brew services start mongodb-community
+```
+To stop the MongoDB server:
+```
+brew services stop mongodb-community
+```
+To verify MongoDB is running:
+```
+brew services list
+```
+To restart the MongoDB server:
+```
+brew services restart mongodb-community
+```
+To install MongoDB Compass (GUI for MongoDB):
+```
+To install Mongoose:
+```
+npm install mongoose
+```
+brew install --cask mongodb-compass
+```
+To install Express:
+```
+npm install express
+```
+
 
 ## Ruby
 Install RVM (Ruby version manager) - see my notes [here](https://docs.google.com/document/d/16G3-ixyX0yHJAy9MevqVIQ8Km5e01OAUD8epqg4h7v0/edit#heading=h.yo6xrg8msfu7) rather than the Makers’ guide.
