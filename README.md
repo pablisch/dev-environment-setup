@@ -56,6 +56,16 @@ To verify install of node, run it by entering `node`.
 ```
 npm install -g esbuild # js build tool install globally
 ```
+
+## MERN (MongoDB & Express)
+
+Install MongoDB:
+```
+brew tap mongodb/brew
+brew update
+brew install mongodb-community@6.0
+```
+
 ## Ruby
 Install RVM (Ruby version manager) - see my notes [here](https://docs.google.com/document/d/16G3-ixyX0yHJAy9MevqVIQ8Km5e01OAUD8epqg4h7v0/edit#heading=h.yo6xrg8msfu7) rather than the Makers’ guide.
 
