@@ -168,6 +168,7 @@ brew install --cask vlc
 brew install --cask firefox 
 brew install --cask  whatsapp 
 brew install --cask  balenaetcher 
+brew install --cask  rectangle 
 ```
 
 
