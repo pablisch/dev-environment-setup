@@ -21,7 +21,7 @@ Suggested order from this point…
 
 ## Dropbox and Keyboard Maestro (and iTerm)
 ```
-brew install --cask  dropbox
+brew install --cask dropbox
 brew install --cask iterm2
 ```
 **Setup keyboard maestro** - see [this Google doc](https://docs.google.com/document/d/10Tu7gZg3YSOjEJppylCtM4W_PvpOlSa6TabENkKWP18/edit?usp=sharing).
