@@ -2,6 +2,10 @@
 
 This file is personal notes on setting up the dev environment as a personal tool.
 
+## MacOS Settings
+
+This is a good place to start. See separate `md` file, [Mac OS Settings](https://github.com/pablisch/dev-environment-setup/blob/main/macos_settings.md).
+
 It is likely to get to this point, you will already have installed Homebrew and Chrome, if not…
 
 ## Homebrew
