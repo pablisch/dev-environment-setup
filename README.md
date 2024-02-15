@@ -78,7 +78,6 @@ If you wish to install individual packages, see [here](https://github.com/pablis
 brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask zoom
-brew install --cask iterm2
 brew tap mongodb/brew
 brew update
 brew install mongodb-community@7.0
