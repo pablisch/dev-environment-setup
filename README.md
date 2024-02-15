@@ -34,7 +34,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ## Aliases for ZSH
 Set up alias’ for command line. My aliases can be found in [this Google Doc](https://docs.google.com/document/d/13pMs0KbL6SVWEqR7BREaDErzdEvKye507XLXTd21dW8/edit?usp=sharing).
 
-## Customise terminal
+## iTerm & Terminal profiles
 My preferred iTerm & terminal profiles can be found [here](https://drive.google.com/drive/folders/1PqfaIsI-swLBF5ibFG5yhHAJUCXU6crN?usp=sharing). 
 
 For iTerm: `iTerm2 > Settings > Profiles > … > import`
