@@ -27,6 +27,13 @@ Sign in and turn sync on to sync all settings.
 brew install --cask visual-studio-code
 ```
 
+## Intellij IDEA
+This is for the Ultimate edition. Code for the Community edition is lower down the page.
+```
+brew install --cask intellij-idea
+```
+If IntelliJ IDEA is installed, it will need to be registered. Currently I have a free license for 12 months through Makers. Registering can be done from the main menu and choose to log in to JetBrains account. This opens a browser page where my account details have been saved. This expires in November 2024.
+
 ## Install Slack, Zoom and iTerm
 ```
 brew install --cask slack
@@ -42,30 +49,6 @@ brew install mongodb-community@7.0
 brew services start mongodb-community
 npm install -g nodemon mongoose express
 brew install --cask mongodb-compass
-```
-
-## Ruby
-Install RVM (Ruby version manager) - see my notes [here](https://docs.google.com/document/d/16G3-ixyX0yHJAy9MevqVIQ8Km5e01OAUD8epqg4h7v0/edit#heading=h.yo6xrg8msfu7) rather than the Makers’ guide.
-
-Assuming that homebrew and xcode command line tools are already installed.
-Then, from here, 
-```
-brew install gnupg
-gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-```
-Then to install rvm itself: 
-```
-\curl -sSL https://get.rvm.io | bash -s stable 
-source ~/.rvm/scripts/rvm 
-```
-To install the latest stable version of Ruby:
-```
-rvm get master # to update the known list of Ruby versions
-rvm list known # to show new list of available stable versions
-rvm install 3.2.2 # <= example code to install version 3.2.2
-rvm install 3.0.2 # <= example code to install version 3.0.2
-rvm docs generate-ri # to install documentation
-rvm –default use 3.0.2 # to nominate 3.0.2 as the default version
 ```
 
 ## Postgres
@@ -111,12 +94,30 @@ brew install --cask epic-games
 ```
 brew install --cask eqmac
 brew install --cask  google-drive
+# below is the community edition of IntelliJ
+brew install --cask intellij-idea-ce
 ```
 
+## Ruby
+Install RVM (Ruby version manager) - see my notes [here](https://docs.google.com/document/d/16G3-ixyX0yHJAy9MevqVIQ8Km5e01OAUD8epqg4h7v0/edit#heading=h.yo6xrg8msfu7) rather than the Makers’ guide.
 
-
-
-
-
-
-
+Assuming that homebrew and xcode command line tools are already installed.
+Then, from here, 
+```
+brew install gnupg
+gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+```
+Then to install rvm itself: 
+```
+\curl -sSL https://get.rvm.io | bash -s stable 
+source ~/.rvm/scripts/rvm 
+```
+To install the latest stable version of Ruby:
+```
+rvm get master # to update the known list of Ruby versions
+rvm list known # to show new list of available stable versions
+rvm install 3.2.2 # <= example code to install version 3.2.2
+rvm install 3.0.2 # <= example code to install version 3.0.2
+rvm docs generate-ri # to install documentation
+rvm –default use 3.0.2 # to nominate 3.0.2 as the default version
+```

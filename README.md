@@ -104,6 +104,9 @@ brew install --cask intellij-idea
 ## Visual Studio Code
 Sign in and turn sync on to sync all settings.
 
+## Intellij IDEA
+If IntelliJ IDEA is installed, it will need to be registered. Currently I have a free license for 12 months through Makers. Registering can be done from the main menu and choose to log in to JetBrains account. This opens a browser page where my account details have been saved. This expires in November 2024.
+
 ## Postgres
 Installed in group installs above.
 Additional information from Makers [here](https://github.com/makersacademy/databases/blob/main/sql_bites/01_setting_up_database.md).
