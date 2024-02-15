@@ -4,13 +4,13 @@ This file is personal notes on setting up the dev environment as a personal tool
 
 It is likely to get to this point, you will already have installed Homebrew and Chrome, if not…
 
-Install homebrew: 
+## Homebrew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-NOTE: This automatically install xcode command line tools.
+NOTE: This automatically installs xcode command line tools.
 
-Install Chrome: 
+## Google Chrome 
 ```
 brew install --cask google-chrome
 ```
@@ -19,27 +19,36 @@ NOTE: Makers’ setup guide [here](https://github.com/makersacademy/getting-star
 
 Suggested order from this point…
 
-Setup keyboard maestro - all details [here](https://docs.google.com/document/d/10Tu7gZg3YSOjEJppylCtM4W_PvpOlSa6TabENkKWP18/edit?usp=sharing).
-
-Install Dropbox for Keyboard Maestro macros:
+## Dropbox and Keyboard Maestro (and iTerm)
 ```
 brew install --cask  dropbox
-```
-
-NOTE: My preferred terminal profile can be found [here](https://drive.google.com/drive/folders/1PqfaIsI-swLBF5ibFG5yhHAJUCXU6crN?usp=sharing). Terminal > Preferences… > Profiles > … > import
-
-Install VSCode (Assuming settings sync is ON, all VSCode settings sync once signed in), Slack, Zoom and iTerm (command line):
-```
-brew install --cask visual-studio-code
-brew install --cask slack
-brew install --cask zoom
 brew install --cask iterm2
 ```
-Install Oh My ZSH (command line) - currently: 
+**Setup keyboard maestro** - see [this Google doc](https://docs.google.com/document/d/10Tu7gZg3YSOjEJppylCtM4W_PvpOlSa6TabENkKWP18/edit?usp=sharing).
+
+## Install Oh My ZSH 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-## JavaScript
+
+## Aliases for ZSH
+Set up alias’ for command line. My aliases can be found in [this Google Doc](https://docs.google.com/document/d/13pMs0KbL6SVWEqR7BREaDErzdEvKye507XLXTd21dW8/edit?usp=sharing).
+
+## Customise terminal
+My preferred terminal profile can be found [here](https://drive.google.com/drive/folders/1PqfaIsI-swLBF5ibFG5yhHAJUCXU6crN?usp=sharing). Terminal > Preferences… > Profiles > … > import
+
+## GitHub CLI
+Install GitHub CLI:
+```
+brew install gh
+gh auth login # and follow the prompts
+```
+Configure git, e.g. `git config –-global user.name “your name”` to configure your name. This is the basis for making other configuration changes, see [here](https://makersacademy.teachable.com/courses/makers-academy-mastery-precourse/lectures/3989157).
+
+See my gitconfig configurations [here](https://docs.google.com/document/d/13pMs0KbL6SVWEqR7BREaDErzdEvKye507XLXTd21dW8/edit?usp=sharing).
+NOTE: in the terminal, `cat .gitconfig` will show the .gitconfig file.
+
+## nvm and Node
 nvm is distributed using GitHub. Find the latest version [here](https://github.com/nvm-sh/nvm#installing-and-updating).
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash # to install nvm
@@ -49,7 +58,7 @@ command -v nvm # to verify installation
 ```
 Then install and run node:
 ```
-nvm install node # here, node is an alias for the latest stable version of node
+nvm install node # here, 'node' is an alias for the latest stable version of node
 nvm use node
 ```
 To verify install of node, run it by entering `node`.
@@ -57,55 +66,59 @@ To verify install of node, run it by entering `node`.
 npm install -g esbuild # js build tool install globally
 ```
 
-## MERN (Nodemon, MongoDB, Mongoose and Express)
-To install all of the below and start the MongoDB server:
+## Homebrew group installs
+
+**NOTE:** This includes some npm commands and **must** only be run after installing node and npm.
+If you wish to install individual packages, see [here](https://github.com/pablisch/dev-environment-setup/blob/main/individual_installs.md)
+
 ```
+brew install --cask visual-studio-code
+brew install --cask slack
+brew install --cask zoom
+brew install --cask iterm2
 brew tap mongodb/brew
 brew update
-brew install mongodb-community@6.0
+brew install mongodb-community@7.0
 brew services start mongodb-community
 npm install -g nodemon mongoose express
 brew install --cask mongodb-compass
-```
-To install Nodemon:
-```
-npm install -g nodemon
-```
-Install MongoDB:
-```
-brew tap mongodb/brew
-brew update
-brew install mongodb-community@6.0
-```
-To start the MongoDB server:
-```
-brew services start mongodb-community
-```
-To stop the MongoDB server:
-```
-brew services stop mongodb-community
-```
-To verify MongoDB is running:
-```
-brew services list
-```
-To restart the MongoDB server:
-```
-brew services restart mongodb-community
-```
-To install MongoDB Compass (GUI for MongoDB):
-```
-To install Mongoose:
-```
-npm install mongoose
-```
-brew install --cask mongodb-compass
-```
-To install Express:
-```
-npm install express
+brew install postgresql@15
+brew services start postgresql@15 # and open a new terminal to open the connection
+brew install --cask tableplus
+brew install --cask postman
+brew install --cask gimp 
+brew install --cask vlc 
+brew install --cask firefox 
+brew install --cask  whatsapp 
+brew install --cask  balenaetcher 
+brew install --cask  rectangle
+brew install --cask epic-games
+brew install --cask android-studio
+# NOTE community edition of IntelliJ is shown on other apps to consider
+brew install --cask intellij-idea
 ```
 
+## Xcode for React Native
+**Easiest to install from the App Store.**
+
+## Visual Studio Code
+Sign in and turn sync on to sync all settings.
+
+## Postgres
+Installed in group installs above.
+Additional information from Makers [here](https://github.com/makersacademy/databases/blob/main/sql_bites/01_setting_up_database.md).
+
+## TablePlus
+Installed in group installs above.
+See [here](https://github.com/pablisch/dev-environment-setup/blob/main/configuring_tableplus.md) for [configuring TablePlus](https://github.com/pablisch/dev-environment-setup/blob/main/configuring_tableplus.md) and [Makers info](https://github.com/makersacademy/databases/blob/main/sql_bites/06_using_table_plus.md).
+
+## Others apps to consider
+```
+brew install --cask eqmac
+brew install --cask  google-drive
+# below is the community edition of IntelliJ
+brew install --cask intellij-idea-ce
+```
 
 ## Ruby
 Install RVM (Ruby version manager) - see my notes [here](https://docs.google.com/document/d/16G3-ixyX0yHJAy9MevqVIQ8Km5e01OAUD8epqg4h7v0/edit#heading=h.yo6xrg8msfu7) rather than the Makers’ guide.
@@ -130,51 +143,3 @@ rvm install 3.0.2 # <= example code to install version 3.0.2
 rvm docs generate-ri # to install documentation
 rvm –default use 3.0.2 # to nominate 3.0.2 as the default version
 ```
-## GitHub CLI
-Install GitHub CLI:
-```
-brew install gh
-gh auth login # and follow the prompts
-```
-Configure git, e.g. `git config –-global user.name “your name”` to configure your name. This is the basis for making other configuration changes, see [here](https://makersacademy.teachable.com/courses/makers-academy-mastery-precourse/lectures/3989157).
-
-See my gitconfig configurations [here](https://docs.google.com/document/d/13pMs0KbL6SVWEqR7BREaDErzdEvKye507XLXTd21dW8/edit?usp=sharing).
-NOTE: in the terminal, `cat .gitconfig` will show the .gitconfig file.
-
-Set up alias’ for command line. My aliases [here](https://docs.google.com/document/d/13pMs0KbL6SVWEqR7BREaDErzdEvKye507XLXTd21dW8/edit?usp=sharing).
-## Postgres
-Install PostgreSQL:
-```
-brew install postgresql@15
-brew services start postgresql@15 # and open a new terminal to open the connection
-```
-Additional information from Makers [here](https://github.com/makersacademy/databases/blob/main/sql_bites/01_setting_up_database.md).
-## More
-Install TablePlus (GUI for databases): 
-```
-brew install --cask tableplus
-```
-See [here](https://github.com/pablisch/dev-environment-setup/blob/main/configuring_tableplus.md) for [configuring TablePlus](https://github.com/pablisch/dev-environment-setup/blob/main/configuring_tableplus.md) and [Makers info](https://github.com/makersacademy/databases/blob/main/sql_bites/06_using_table_plus.md).
-
-Install Postman (HTTP client GUI):
-```
-brew install --cask postman
-```
-BELOW are other useful apps but not directly needed for the coding environment:
-```
-brew install --cask google-drive 
-brew install --cask gimp 
-brew install --cask vlc 
-brew install --cask firefox 
-brew install --cask  whatsapp 
-brew install --cask  balenaetcher 
-brew install --cask  rectangle 
-```
-
-
-
-
-
-
-
-
