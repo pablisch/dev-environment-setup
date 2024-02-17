@@ -121,6 +121,10 @@ Additional information from Makers [here](https://github.com/makersacademy/datab
 Installed in group installs above.
 See [here](https://github.com/pablisch/dev-environment-setup/blob/main/configuring_tableplus.md) for [configuring TablePlus](https://github.com/pablisch/dev-environment-setup/blob/main/configuring_tableplus.md) and [Makers info](https://github.com/makersacademy/databases/blob/main/sql_bites/06_using_table_plus.md).
 
+## Microsoft Teams Classic
+
+Can be downloaded from the internet, e.g. [here](https://answers.microsoft.com/en-us/msteams/forum/all/where-to-get-microsoft-teams-classic/52be289d-7f3e-42db-9789-ce65cb8b483d) using [this link](https://go.microsoft.com/fwlink/p/?linkid=869428), or from my [Google Drive](https://drive.google.com/file/d/1-yyp0Wh4AWwcTPz_WmWtnv-9IhEKOV-r/view?usp=sharing).
+
 ## Others apps to consider
 ```
 brew install --cask eqmac
