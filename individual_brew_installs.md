@@ -82,6 +82,7 @@ brew install --cask android-studio
 ## Other normal apps to install depending on usage
 ```
 brew install --cask gimp 
+brew install --cask discord
 brew install --cask vlc 
 brew install --cask firefox 
 brew install --cask  whatsapp 

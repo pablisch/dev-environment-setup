@@ -92,6 +92,7 @@ brew install postgresql@15
 brew services start postgresql@15 # and open a new terminal to open the connection
 brew install --cask tableplus
 brew install --cask postman
+brew install --cask discord
 brew install --cask gimp 
 brew install --cask vlc 
 brew install --cask firefox 
