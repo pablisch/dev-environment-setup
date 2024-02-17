@@ -76,7 +76,7 @@ npm install -g esbuild # js build tool install globally
 ## Homebrew group installs
 
 **NOTE:** This includes some npm commands and **must** only be run after installing node and npm.
-If you wish to install individual packages, see [here](https://github.com/pablisch/dev-environment-setup/blob/main/individual_installs.md)
+If you wish to install individual packages, see [here](https://github.com/pablisch/dev-environment-setup/blob/main/individual_brew_installs.md)
 
 ```
 brew install --cask visual-studio-code
