@@ -73,6 +73,10 @@ To verify install of node, run it by entering `node`.
 npm install -g esbuild # js build tool install globally
 ```
 
+## Python
+Python can be downloaded from the [Python website](https://www.python.org/downloads/). 
+Download and install the latest version.
+
 ## Homebrew group installs
 
 **NOTE:** This includes some npm commands and **must** only be run after installing node and npm.
